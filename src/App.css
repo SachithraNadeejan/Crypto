@@ -1,0 +1,481 @@
+
+body {
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1a1446, #23184e);
+  color: #ffffff;
+  display:grid;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+/**********************************Dashboard Page Styles *****************************************/
+/**********************************Dashboard Page Styles *****************************************/
+/**********************************Dashboard Page Styles *****************************************/
+/**********************************Dashboard Page Styles *****************************************/
+/**********************************Dashboard Page Styles *****************************************/
+/**********************************Dashboard Page Styles *****************************************/
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px auto;                
+  line-height: 1.2;               
+  display: inline-block;       
+  text-shadow: 0 0 10px rgba(142, 255, 155, 0.3);
+  overflow-wrap: break-word;
+
+  color: #8ee4ff;
+  text-shadow: 0 0 10px rgba(142, 228, 255, 0.5);
+}
+
+
+.search-bar {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px auto;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  padding: auto;
+  grid-template-columns: repeat(3, auto);
+  gap: 24px;
+  width: 100%;
+  max-width: 1100px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 400px) {
+  .grid {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+}
+
+
+.coin-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.coin-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  border-color: #8ee4ff;
+}
+
+.coin-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.coin-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.coin-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.symbol {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.coin-details p {
+  margin: 6px 0;
+  font-size: 1rem;
+}
+
+.coin-details p strong {
+  color: #8ee4ff;
+}
+
+.green {
+  color: #66ff99;
+}
+
+.red {
+  color: #ff6b81;
+}
+
+.chart-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 10px;
+  border-radius: 15px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+  margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+  .chart-container {
+    padding: 20px 15px;
+  }
+}
+
+.dropdown {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #8ee4ff;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.08));
+  border: 1px solid rgba(142, 228, 255, 0.2);
+  border-radius: 12px;
+  outline: none;
+  margin: 0 auto 20px auto;
+  display: block;
+  text-align: center;
+  appearance: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+}
+
+@media (max-width: 400px) {
+  .dropdown {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+}
+
+
+.dropdown:hover {
+  cursor: pointer;
+  border-color: #8ee4ff;
+}
+
+.dropdown:focus {
+  border-color: #8ee4ff;
+  box-shadow: 0 0 10px #8ee4ff88, 0 0 20px #8ee4ff55;
+}
+
+.dropdown option {
+  background-color: #241d4f
+;
+  color: #8ee4ff;
+}
+
+
+
+
+
+
+
+/********************************** Home Page Styles *****************************************/
+/********************************** Home Page Styles *****************************************/
+/********************************** Home Page Styles *****************************************/
+/********************************** Home Page Styles *****************************************/
+/********************************** Home Page Styles *****************************************/
+/********************************** Home Page Styles *****************************************/
+
+
+
+.home-container {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 30px auto;
+  background: linear-gradient(to right, #1a1446, #23184e);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.home-container h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  color: #8ee4ff;
+  text-shadow: 0 0 10px rgba(142, 228, 255, 0.5);
+}
+
+.home-container p {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 16px;
+  transition: transform 0.2s ease;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.feature h3 {
+  font-size: 1.8rem;
+  color: #8ee4ff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(142, 228, 255, 0.5);
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.feature:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  border-color: #8ee4ff;
+}
+
+.feature:nth-child(1) {
+  background: rgba(255, 255, 255, 0.05); /* Light green */
+}
+
+.feature:nth-child(2) {
+  background: rgba(255, 255, 255, 0.05); /* Light pink */
+}
+
+.feature:nth-child(3) {
+  background: rgba(255, 255, 255, 0.05); /* Light blue */
+}
+
+
+/********************************** About Page Styles *****************************************/
+/********************************** About Page Styles *****************************************/
+/********************************** About Page Styles *****************************************/
+/********************************** About Page Styles *****************************************/
+/********************************** About Page Styles *****************************************/
+/********************************** About Page Styles *****************************************/
+
+
+
+
+.about-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #1a1446, #23184e);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 255, 255, 0.08);
+  color: #fff;
+  text-align: center; /* Center-aligns all text */
+}
+
+.about-container h2 {
+  font-size: 2.8rem;
+  color: #8ee4ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(142, 228, 255, 0.4);
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+.about-container h3 {
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #8ee4ff;
+  text-shadow: 0 0 10px rgba(142, 228, 255, 0.5);
+}
+
+.highlight {
+  color: #8ee4ff;
+  font-weight: 600;
+}
+
+.team-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-aligns the team members */
+  gap: 20px;
+}
+
+.team-member {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.07);
+  max-width: 600px;
+}
+
+
+/********************************** Contact Page Styles *****************************************/
+/********************************** Contact Page Styles *****************************************/
+/********************************** Contact Page Styles *****************************************/
+/********************************** Contact Page Styles *****************************************/
+/********************************** Contact Page Styles *****************************************/
+/********************************** Contact Page Styles *****************************************/
+
+
+
+
+.contact-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #1a1446, #23184e);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.08);
+  text-align: center;
+  color: #fff;
+}
+
+.contact-container h2 {
+  font-size: 2.6rem;
+  color: #8ee4ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(142, 228, 255, 0.4);
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+form label {
+  font-weight: 600;
+  color: #8ee4ff;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #8ee4ff;
+  box-shadow: 0 0 10px #8ee4ff88;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #8ee4ff;
+  color: #1a1446;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(142, 228, 255, 0.3);
+}
+
+button:hover {
+  background-color: #66ff99;
+  color: #1a1446;
+  box-shadow: 0 6px 25px rgba(102, 255, 153, 0.3);
+}
+
+
+
+
+/********************************** Footer Page Styles *****************************************/
+/********************************** Footer Page Styles *****************************************/
+/********************************** Footer Page Styles *****************************************/
+/********************************** Footer Page Styles *****************************************/
+/********************************** Footer Page Styles *****************************************/
+/********************************** Footer Page Styles *****************************************/
+
+
+
+.footer {
+  background: rgba(255, 255, 255, 0.05);
+  color: #8ee4ff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.05);
+}
